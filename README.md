@@ -1,4 +1,4 @@
-# rust_basic_web_course
+# Rust_Programming_Course
 
 # **📚 Rust Programming Course Outline**
 Each topic contains **over 5 practical examples** to reinforce learning.
