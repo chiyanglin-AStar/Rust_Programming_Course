@@ -10,7 +10,9 @@ Each topic contains **over 5 practical examples** to reinforce learning.
 - Installing Rust (Rustup, Cargo)
 - Writing & Running Your First Rust Program
 - Rust Toolchain (Cargo, Crates, Rustfmt, Clippy)
-  [ref:](https://www.tutorialspoint.com/rust/rust_helloworld_example.htm)
+
+[ref:](https://www.tutorialspoint.com/rust/rust_helloworld_example.htm)
+
 ### **Examples**
 1. Installing Rust using `rustup`
   ```rust
@@ -28,7 +30,32 @@ rustc --version
   ./hello
 
 ```
-4. Using Cargo to build & run a project
-5. Exploring Cargo.toml & dependencies
-6. Using `rustc` to compile Rust code
+3. Using Cargo to build & run a project
+```rust
+cargo new hello
+cd hello
+tree .
+.
+├── Cargo.toml
+└── src
+    └── main.rs
+
+1 directory, 2 files
+cat Cargo.toml
+[package]
+name = "helloworld"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cat ./src/main.rs
+fn main() {
+    println!("Hello, world!");
+}
+cargo build
+cargp run 
+
+```
+4. Exploring Cargo.toml & dependencies
+5. Using `rustc` to compile Rust code
 
