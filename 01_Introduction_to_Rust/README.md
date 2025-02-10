@@ -13,8 +13,21 @@ Each topic contains **over 5 practical examples** to reinforce learning.
 
 ### **Examples**
 1. Installing Rust using `rustup`
+  ```rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+rustc --version
+  ```
 2. Writing a "Hello, World!" program
-3. Using Cargo to build & run a project
-4. Exploring Cargo.toml & dependencies
-5. Using `rustc` to compile Rust code
+   ```rust
+fn main(){
+   println!("Rust says Hello to TutorialsPoint !!");
+}
+
+rustc hello.rs 
+./hello
+   ```
+4. Using Cargo to build & run a project
+5. Exploring Cargo.toml & dependencies
+6. Using `rustc` to compile Rust code
 
