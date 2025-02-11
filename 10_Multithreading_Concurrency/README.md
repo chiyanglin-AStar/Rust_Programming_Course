@@ -18,4 +18,9 @@ Each topic contains **over 5 practical examples** to reinforce learning.
 4. Sending messages between threads using channels
 5. Writing an `async` function
 
+```rustc
+rustc --edition=2018 --crate-type=lib xxx.rs
+
+```
+
 
