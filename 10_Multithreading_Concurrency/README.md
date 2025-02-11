@@ -24,4 +24,19 @@ rustc --edition=2018 --crate-type=lib xxx.rs
 ```
 [async ref:Rust Async IO: A Beginner’s Guide to Asynchronous Programming in Rust](https://medium.com/@tzutoo/rust-async-io-a-beginners-guide-to-asynchronous-programming-in-rust-600219226c82)
 
+### for web application 
 
+```rust
+
+cargo add actix-web
+
+```
+
+or in Cargo.toml
+
+```rustc 
+
+[dependencies]
+actix-web = "4"
+
+```
