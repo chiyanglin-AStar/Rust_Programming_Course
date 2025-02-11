@@ -1,0 +1,9 @@
+[package]
+name = "asyn_ex1"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+# or
+#async-std = "1.10"

@@ -1,3 +1,4 @@
+// Example 3: Exploring bool and char
 fn main() {
     let is_active: bool = true;
     let character: char = 'R';
