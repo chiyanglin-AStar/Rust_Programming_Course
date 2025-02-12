@@ -16,6 +16,11 @@ Each topic contains **over 5 practical examples** to reinforce learning.
 3. Understanding ownership in Rust
 4. Using borrowing & references (`&`)
 5. Exploring lifetimes (`'a` annotations)
+   
+[What Is Ownership?](https://doc.rust-lang.org/stable/book/ch04-01-what-is-ownership.html)
+
+[什麼是所有權？](https://rust-lang.tw/book-tw/ch04-01-what-is-ownership.html#%E4%BB%80%E9%BA%BC%E6%98%AF%E6%89%80%E6%9C%89%E6%AC%8A)
+
 
 6. **Ownership Transfer**:
 
@@ -27,7 +32,7 @@ Each topic contains **over 5 practical examples** to reinforce learning.
             println!("{}", s2);
         }
    ```
-  8. **Borrowing**:
+  7. **Borrowing**:
         ```rust
         fn main() {
             let s1 = String::from("hello");
@@ -39,7 +44,7 @@ Each topic contains **over 5 practical examples** to reinforce learning.
             s.len()
         }
         ```
-  9. **Mutable Borrow**:
+  8. **Mutable Borrow**:
         ```rust
         fn main() {
             let mut s = String::from("hello");
@@ -51,7 +56,7 @@ Each topic contains **over 5 practical examples** to reinforce learning.
             s.push_str(", world");
         }
         ```
-  10. **Lifetimes**:
+  9. **Lifetimes**:
         ```rust
         fn main() {
             let string1 = String::from("long string is long");
@@ -71,7 +76,7 @@ Each topic contains **over 5 practical examples** to reinforce learning.
             }
         }
         ```
-   11. **Dangling Reference Prevention**:
+   10. **Dangling Reference Prevention**:
         ```rust
         fn main() {
             let reference_to_nothing = dangle();
