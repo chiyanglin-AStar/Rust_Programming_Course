@@ -17,4 +17,70 @@ Each topic contains **over 5 practical examples** to reinforce learning.
 4. Using borrowing & references (`&`)
 5. Exploring lifetimes (`'a` annotations)
 
+6. **Ownership Transfer**:
+        ```rust
+        fn main() {
+            let s1 = String::from("hello");
+            let s2 = s1;
+            // println!("{}", s1); // This would cause a compile-time error
+            println!("{}", s2);
+        }
+        ```
+  7. **Borrowing**:
+        ```rust
+        fn main() {
+            let s1 = String::from("hello");
+            let len = calculate_length(&s1);
+            println!("The length of '{}' is {}.", s1, len);
+        }
+
+        fn calculate_length(s: &String) -> usize {
+            s.len()
+        }
+        ```
+  8. **Mutable Borrow**:
+        ```rust
+        fn main() {
+            let mut s = String::from("hello");
+            change(&mut s);
+            println!("{}", s);
+        }
+
+        fn change(s: &mut String) {
+            s.push_str(", world");
+        }
+        ```
+  9. **Lifetimes**:
+        ```rust
+        fn main() {
+            let string1 = String::from("long string is long");
+            let result;
+            {
+                let string2 = String::from("xyz");
+                result = longest(string1.as_str(), string2.as_str());
+            }
+            println!("The longest string is {}", result);
+        }
+
+        fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
+            if x.len() > y.len() {
+                x
+            } else {
+                y
+            }
+        }
+        ```
+   10. **Dangling Reference Prevention**:
+        ```rust
+        fn main() {
+            let reference_to_nothing = dangle();
+        }
+
+        fn dangle() -> &String {
+            let s = String::from("hello");
+            &s // Compile-time error: `s` does not live long enough
+        }
+        ```
+
+
 
