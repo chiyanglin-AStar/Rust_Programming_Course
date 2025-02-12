@@ -18,15 +18,16 @@ Each topic contains **over 5 practical examples** to reinforce learning.
 5. Exploring lifetimes (`'a` annotations)
 
 6. **Ownership Transfer**:
-        ```rust
+
+   ```rust
         fn main() {
             let s1 = String::from("hello");
             let s2 = s1;
             // println!("{}", s1); // This would cause a compile-time error
             println!("{}", s2);
         }
-        ```
-  7. **Borrowing**:
+   ```
+  8. **Borrowing**:
         ```rust
         fn main() {
             let s1 = String::from("hello");
@@ -38,7 +39,7 @@ Each topic contains **over 5 practical examples** to reinforce learning.
             s.len()
         }
         ```
-  8. **Mutable Borrow**:
+  9. **Mutable Borrow**:
         ```rust
         fn main() {
             let mut s = String::from("hello");
@@ -50,7 +51,7 @@ Each topic contains **over 5 practical examples** to reinforce learning.
             s.push_str(", world");
         }
         ```
-  9. **Lifetimes**:
+  10. **Lifetimes**:
         ```rust
         fn main() {
             let string1 = String::from("long string is long");
@@ -70,7 +71,7 @@ Each topic contains **over 5 practical examples** to reinforce learning.
             }
         }
         ```
-   10. **Dangling Reference Prevention**:
+   11. **Dangling Reference Prevention**:
         ```rust
         fn main() {
             let reference_to_nothing = dangle();
