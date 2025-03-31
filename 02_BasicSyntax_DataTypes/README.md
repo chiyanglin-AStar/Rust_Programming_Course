@@ -29,8 +29,8 @@ Each topic contains **over 5 practical examples** to reinforce learning.
 7. **Floating Point Types**:
 ```rust
 fn main() {
-            let x: f64 = 3.14;
-            let y: f32 = 2.71;
+            let x: f64 = 3.1412345678901234567890123456789;
+            let y: f32 = 2.7112345678901234567890123456789;
             println!("x = {}, y = {}", x, y);
         }
 ```
