@@ -34,3 +34,12 @@ fn main() {
             println!("x = {}, y = {}", x, y);
         }
 ```
+```rust
+https://stackoverflow.com/questions/26576889/how-do-i-print-a-rust-floating-point-number-with-all-available-precision
+```rust
+fn main() {
+            let x: f64 = 3.1412345678901234567890123456789;
+            let y: f32 = 2.7112345678901234567890123456789;
+            println!("x = {:.32}, y = {:.12}", x, y);
+        }
+```
