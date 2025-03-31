@@ -19,18 +19,18 @@ Each topic contains **over 5 practical examples** to reinforce learning.
 5. Shadowing variables
 
 6. **Integer Types**:
-        ```rust
-        fn main() {
+```rust
+ fn main() {
             let a: i32 = 10;
             let b: u32 = 20;
             println!("a = {}, b = {}", a, b);
-        }
-        ```
+        }       
+```
 7. **Floating Point Types**:
-        ```rust
-        fn main() {
+```rust
+fn main() {
             let x: f64 = 3.14;
             let y: f32 = 2.71;
             println!("x = {}, y = {}", x, y);
         }
-        ```
+```
