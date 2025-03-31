@@ -35,8 +35,8 @@ fn main() {
         }
 ```
 ```rust
-https://stackoverflow.com/questions/26576889/how-do-i-print-a-rust-floating-point-number-with-all-available-precision
-```rust
+//https://stackoverflow.com/questions/26576889/how-do-i-print-a-rust-floating-point-number-with-all-available-precision
+
 fn main() {
             let x: f64 = 3.1412345678901234567890123456789;
             let y: f32 = 2.7112345678901234567890123456789;
